@@ -7,7 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-  <p>basic cache</p>
+  <p>basic cache example</p>
   <script src="../release/bundle.js"></script>
+  <script>
+    var BC = window.BasicCache
+    var cache = new BC()
+    cache.set('a', 500)
+    alert(cache.get('a'))
+  </script>
 </body>
 </html>
